@@ -22,7 +22,37 @@ function generatePassword() {
     else {
       break
     } 
+
   }
+
+  var lowercase = window.confirm("Do you want lowercase letters in your password?")
+  var uppercase = window.confirm("Do you want uppercase letters in your password?")
+  var numbers = window.confirm("Do you want numbers in your password?")
+  var symbols = window.confirm("Do you want symbols in your password?")
+
+  var lowercaseList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+  var uppercaseList = ['A','B','C','D','E','F','G','H','I','J','L','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+  var numbersList = ['0','1','2','3','4','5','6','7','8','9']
+  var symbolsList = ['`','~','!','@','#','$',"%",'^','&','*','(',')','-','_','=','+','[','{',']','}','|',';',':','"',',','<','.','>','/','?']
+
+  var characterList = []
+
+  if (lowercase === true) {
+    characterList.push(lowercaseList)
+  }
+
+  if (uppercase === true) {
+    characterList.push(uppercaseList)
+  }
+
+  if (numbers === true) {
+    characterList.push(numbersList)
+  }
+
+  if (symbols === true) {
+    characterList.push(symbolsList)
+  }
+
 }
 
 
