@@ -1,6 +1,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function randomInt(min, max) {
+  if
+}
+
 function generatePassword() {
   
   while (true) {
@@ -52,6 +56,15 @@ function generatePassword() {
   if (symbols === true) {
     characterList.push(symbolsList)
   }
+
+  var generatedPassword = ""
+
+  for (var i = 0; i <= passLength; i++) {
+    var random = Math.floor(Math.random() * characterList.length);
+    generatedPassword += characterList.substring(random, random +1);
+  }
+
+  return generatedPassword
 
 }
 
