@@ -17,6 +17,9 @@ body {
   background-color: #f9fbfd;
 }
 
+/* Everything below this comment until the next comment is what controls the css functionality of the password generator box in the middle of the webpage. As well as its size,
+its color scheme, its padding, its margin, its font size, its position on the page etcetc. All of these control that part of the page. */
+
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -117,6 +120,8 @@ button[disabled] {
   resize: none;
   overflow: hidden;
 }
+
+/* These are the media queries that allow the webpage to be responsive and adjust to multiple devices. */
 
 @media (max-width: 690px) {
   .btn {
